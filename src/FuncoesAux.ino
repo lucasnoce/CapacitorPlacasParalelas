@@ -40,9 +40,9 @@ void medirCapacitancia(){
 
   duracao = (float) TCNT1 / (float) (TIMER1_CLK_FREQ);
   capacitancia = (float) duracao / (1.1 * RA);
-  Serial.println(TCNT1);
-  Serial.println(duracao);
-  Serial.println(capacitancia);
+  
+  Serial.print("Duracao (us): "); Serial.println(duracao);
+  Serial.print("Capacitancia (uF): "); Serial.println(capacitancia);
 }
 
 
